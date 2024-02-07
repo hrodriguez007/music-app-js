@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* center the app */
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+
+header p {
+    font-size: 15px;
+}
+
+.pads {
+    background: lightseagreen;
+    width: 100%;
+    display: flex; /* arranges pads to the bottom */
+}
+
+/* select all the divs inside the pads */
+.pads > div {
+    height: 100px;
+    width: 100px;
+    flex: 1;/* stretches out the pads */
+}
+
+.pad1 {
+    background: #a2ffcc;
+}
+
+.pad2 {
+    background: #cc5d5d;
+}
+
+.pad3 {
+    background: #c7870f;
+}
+
+.pad4 {
+    background: #e0d750;
+}
+
+.pad5 {
+    background: #218fbe;
+}
+
+.pad6 {
+    background: #b86ab0;
+}
+
+.visual > div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    bottom: 0%;
+    z-index: -1;
+}
+
+@keyframes jump {
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+
+    50%{
+       bottom: 50%;
+       left: 50%; 
+    }
+
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+/* the jumping balls */
+.visual > div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+}
